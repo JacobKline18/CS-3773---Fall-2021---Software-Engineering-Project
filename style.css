@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:sans-serif;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 0px;
+}
+
+ul {
+
+    /* these three lines fix the navigation bar to the top of page.*/
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */ /* if this is uncommented, the dropdown won't appear.*/
+    background-color: #333;
+}
+
+li {
+    float: right;
+    /* border-right: 1px solid #bbb; /* Add a gray right border to all list items, except the last item (last-child) */
+}
+
+li a, .dropbtn {
+    display: inline-block; /* Allows us to specify padding (and height, width, margins, etc. if you want)*/
+    color: white; /* text color */
+    font-weight: 700; /* Makes the text bold. */
+    text-align: center;
+    padding: 14px 16px; /* Specify some padding between each <a> element, to make them look good */
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #111;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* navigation bar will appear green depending on which page you are currently on.*/
+.active {
+    background-color: #04AA6D;
+}
+
+
+
+
+
+
+
+
+
+div.imgcontainer{
+    background-color:rgb(0, 0, 0);
+    margin-top: 46px;
+}
+
+img{
+    width:inherit;
+    height:inherit;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.button-header {
+    margin-top: -36px;
+    margin-left: 200px;
+    padding: 20px 50px;
+    border: none;
+    background: #333;
+    color: white;
+    border-radius: 0px; /* makes the button rounder */
+    cursor: pointer;
+    transition: all 1s;
+    display: block;
+    text-align: center;
+    font-size: 15px;
+}
+
+.button-header:hover {
+    background: black;
+    color: white;
+    border: none;
+}
+
+.button {
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: none;
+    background: #333;
+    color: white;
+    border-radius: 20px; /* makes the button rounder */
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 1s;
+    display: block;
+}
+
+.button:hover {
+    background: transparent;
+    color: black;
+    border: 1px solid black;
+}
+
+form {
+    margin: 10px;
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0;
+}
+
+/* targetting two, three, etc, elements simultaneously*/
+form input[type="text"],
+input[type="email"] {
+    padding: 7px 0;
+    margin: 3px 0;
+    width: 25%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #333;
+    margin: auto;
+}
+
+table td, th {
+    background-color: #f4f4f4;
+}
+
+table th {
+    border-bottom: 1px solid #333;
+}
